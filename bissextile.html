@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bissextile</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            Écrivez en JavaScript un programme qui demande à l'utilisateur d'entrée une 
+            année (YYYY) et le programme vérifie si c'est une année bissextile.
+            Si oui : le programme affiche : Oui c'est une année bissextile
+            Si non : le programme affiche : NON ce n'est pas une année bissextile
+
+            R1 : l'année est divisible par 4 sans être divisible par 100 
+            R2 : l'année est divisible par 400
+        */
+    let nbr = prompt("Veuillez Entrer une année")
+
+     if (nbr % 4 == 0) {
+        console.log("Oui c'est une année bissextile")
+     } else {
+         console.log("NON ce n'est pas une année bissextile")
+     }
+
+    </script>
+</body>
+</html>
