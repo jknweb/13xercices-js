@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deviner nombre en 10 et 20</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        Écrire un algorithme qui demande un nombre compris entre 10 et 20, jusqu’à ce 
+        que la réponse convienne. En cas de réponse supérieure à 20, on fera apparaître 
+        un message : « Plus petit ! », et inversement, « Plus grand ! » si le nombre est 
+        inférieur à 10.  nbr >= 10 || nbr <=20
+        */
+        let nbr = prompt('Entrez un nombre compris entre 10 et 20') * 1
+        while (nbr > 20) {
+            nbr = prompt('Entrez un nombre compris entre 10 et 20') * 1
+            if (nbr < 20) {
+                console.log('Plus petit')
+            } else if(nbr>20) {
+                console.log('Plus grand')
+            } 
+            
+        }
+        console.log('Bravo, votre chiffre est :' + nbr)
+    </script>
+</body>
+</html>

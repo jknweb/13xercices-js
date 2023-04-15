@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somme des nombres</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        Écrire un algorithme qui demande un nombre de départ, et qui calcule la somme 
+        des entiers jusqu’à ce nombre. Par exemple, si l’on entre 5, le programme doit 
+        calculer : 1 + 2 + 3 + 4 + 5 = 15
+        NB : on souhaite afficher uniquement le résultat, pas la décomposition du calcul.
+        */
+        let nbr = prompt("Entrez un nombre")
+        function som (nbr) {
+            let f = 0
+            for (let i=1; i <=nbr; i++) {
+                f = f + i
+            }
+            return f
+        }
+        console.log(som(nbr))
+    </script>
+</body>
+</html>

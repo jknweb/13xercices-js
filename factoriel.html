@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factoriel d'un nombre</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        Écrire un algorithme qui demande un nombre de départ, et qui calcule sa 
+        factorielle.
+        NB : la factorielle de 8, notée 8!, vaut 
+        1 x 2 x 3 x 4 x 5 x 6 x 7 x 8 : 
+        */
+        let nbr = prompt("Entrez un nombre")
+
+        function factoriel (nbr) {
+            let f = 1
+            for (let i=1; i <=nbr; i++) {
+                f = f * i
+            }
+            return f
+        }
+        console.log(factoriel(nbr))
+    </script>
+</body>
+</html>

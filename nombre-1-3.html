@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deviner nombre en 1 et 3</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        Écrire un algorithme qui demande à l’utilisateur un nombre compris entre 1 et 3 
+        jusqu’à ce que la réponse convienne. 
+        */
+        let nbr = prompt('Entrez un nombre compris entre 1 et 3') * 1
+        while (nbr >= 1 && nbr <=3) {
+            nbr = prompt('Entrez un nombre compris entre 1 et 3') * 1
+        }
+        console.log('Bravo, votre chiffre est :' + nbr)
+    </script>
+</body>
+</html>
